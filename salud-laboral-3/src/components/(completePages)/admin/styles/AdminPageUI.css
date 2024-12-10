@@ -1,0 +1,14 @@
+/* For UI general styles */
+.Admin__btn {
+    width: 65%;
+    justify-self: center;
+    padding: 1.25rem 5rem;
+    border-style: none;
+    border: none;
+    border-radius: 0.375rem;
+    color: #fff;
+    background-color: #222;
+    font-size: 1.35em;
+    cursor: pointer;
+    text-decoration: none;
+}

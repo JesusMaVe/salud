@@ -1,0 +1,50 @@
+:root {
+	--main-bg-color: white;
+	--main-border-color: #aaa;
+	--main-shadow: rgba(10, 10, 10, 0.3) 0 2px 0 0;
+	--link-color: #4a4a4a;
+	--link-hover-bg: #7ab2d3;
+	--border-radius: 0.5rem;
+	--gap-size: 1.5rem;
+}
+
+.MainHeader__navCtn {
+	position: fixed !important;
+	top: 0;
+	z-index: 2;
+	background: var(--main-bg-color);
+	width: 100%;
+	display: grid;
+	border-bottom: 1px solid var(--main-border-color);
+	box-shadow: var(--main-shadow);
+}
+
+.MainHeader__navBody {
+	display: flex;
+	font-size: 1rem;
+	margin: 1rem;
+	font-weight: bold;
+	width: 92%;
+	justify-items: flex-start;
+	justify-content: space-around;
+	gap: var(--gap-size);
+}
+
+.MainHeader__link {
+	color: var(--link-color);
+	text-decoration: none;
+	margin: 0 0.5rem;
+	padding: 0.5rem;
+	border-radius: var(--border-radius);
+	transition: background-color 0.3s ease;
+}
+
+.MainHeader__link:not(.active):hover {
+	background-color: var(--link-hover-bg);
+	color: white;
+}
+
+.MainHeader__link:focus {
+	outline: 2px solid var(--link-hover-bg);
+	outline-offset: 2px;
+}

@@ -1,0 +1,186 @@
+.SignIn__Card {
+    width: 42%;
+	display: grid;
+    place-self: center;
+    margin-top: 2rem;
+    border-radius: .375rem;
+    box-shadow: rgba(10, 10, 10, 0.3) 0 0 2px 0;
+}
+
+.SignIn__label {
+    justify-self: flex-start;
+    padding-left: 1.6rem;
+    margin-bottom: 5px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.SignIn__input {
+    width: 85%;
+	justify-self: center;
+    padding: 8px;
+    border-radius: 0.375rem;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #444050;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border: 1px solid #d1d0d4;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.SignIn__formDisplay {
+    display: grid;
+    padding-bottom: 1rem;
+}
+
+.SignIn__formBtn {
+    width: 60%;
+    justify-self: center;
+    padding: 8px 0;
+    border-style: none;
+    border: none;
+    border-radius: 0.375rem;
+    color: #fff;
+    background-color: #222;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.SignIn__containerLy {
+	width: 100%;
+	display: grid;
+    padding-bottom: 1rem;
+}
+
+.SignIn__formTitle {
+    font-size: 1.2em;
+    color: #5a5a5a;
+    padding-left: 1rem;
+}
+
+.SignIn__twoRemLine {
+    width: 100%;
+    height: 2rem;
+}
+
+.SignIn__oneRemLine {
+    width: 100%;
+    height: 1.2rem;
+}
+
+.SignIn__inputGroup {
+	width: 98%;
+	display: grid;
+	justify-self: center;
+}
+
+.SignIn__inputLine {
+	width: 100%;
+	display: grid;
+	justify-self: center;
+    place-items: center;
+    padding: 5px 0;
+    margin-bottom: .75rem;
+}
+
+.SignIn__inputLineLy {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 50% 50%;
+	justify-items: center;
+	justify-self: center;
+}
+
+.SignIn__inputLy {
+	width: 90%;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 50% 50%;
+	padding-left: 2%;
+	justify-items: center;
+	justify-self: center;
+}
+
+.SignIn__inputLy span {
+	width: 100%;
+}
+
+.SignIn__halfInput {
+    width: 110px;
+    display: inline;
+    margin: 2px 0;
+    padding: 9px 20px 9px 12px;
+    border: 2px solid #eee;
+    border-radius: 0.375rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 3px 0px;
+    font-size: 16px;
+}
+
+.SignIn__halfInput:nth-child(2) {
+    margin-left: 10px;
+}
+
+.SignIn__centerItem {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    padding-top: 0.8rem;
+}
+
+@media(max-width: 768px) {
+	.SignIn__formBtn {
+		width: 80%;
+        justify-self: center;
+	}
+	.SignIn__paymentBtn {
+		width: 88%;
+        justify-self: center;
+	}
+}
+
+/*
+    STYLES FROM PAYMENT FORM ENDS ABOVE
+*/
+
+.SignIn__resumeBox {
+	width: 80%;
+	display: grid;
+}
+
+.SignIn__hgLy {
+	width: 100%;
+	display: grid;
+	align-items: self-start;
+	justify-items: center;
+}
+
+.SignIn__hgPricingLy {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-left: 7%;
+}
+
+.SignIn__lgFont {
+	font-size: 3em;
+}
+
+.SignIn__superIndex {
+	display: grid;
+	font-size: 0.7em;
+	vertical-align: super;
+}
+
+.SignIn__blue {
+    color: rgb(15, 99, 196);
+}
+
+@media(max-width: 768px) {
+	.SignIn__resumeBox {
+		width: 88%;
+	}
+}

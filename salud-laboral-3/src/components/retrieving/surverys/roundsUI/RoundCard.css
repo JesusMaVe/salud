@@ -1,0 +1,359 @@
+.Prueba__card {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    place-self: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(10, 10, 10, 0.4) 0 0 3px 0;
+}
+
+.Prueba__card__internalContainer {
+    width: 100%;
+    height: 100%;
+    place-self: center;
+}
+
+.Prueba__tags {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 20px;
+}
+
+.Prueba__tags span {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.Prueba__tags strong {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Fermin */
+
+
+.Prueba__card-x2 {
+    grid-column: span 2;
+}
+
+.Prueba__card-x3 {
+    grid-column: span 3;
+}
+
+.Prueba__card-header {
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+}
+
+.Prueba__header-left {
+    display: flex;
+    align-items: center;
+}
+
+.Prueba__main-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.Prueba__title-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.Prueba__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Prueba__subtitle {
+    font-size: 14px;
+    color: #888;
+}
+
+.Prueba__extra-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+.Prueba__extra-btn:hover {
+    color: #000;
+}
+
+.Prueba__card-content {
+    margin-top: 20px;
+}
+
+/* Task Item */
+.Prueba__task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Prueba__task-item:last-child {
+    border-bottom: none;
+}
+
+.Prueba__task-item strong {
+    font-size: 16px;
+}
+
+.Prueba__task-item p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.Prueba__task-item p .Prueba__fa-folder {
+    margin-right: 5px;
+}
+
+.Prueba__status {
+    display: flex;
+    align-items: center;
+}
+
+.Prueba__time-badge {
+    background-color: #ff4d4f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.Prueba__time-badge.Prueba__green {
+    background-color: #52c41a;
+}
+
+.Prueba__status-icon {
+    font-size: 18px;
+}
+
+.Prueba__status-icon.Prueba__green {
+    color: #52c41a;
+}
+
+/* Job Card */
+.Prueba__job-card {
+    text-align: center;
+}
+
+.Prueba__job-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.Prueba__job-card .Prueba__description {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.Prueba__job-card .Prueba__description p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.Prueba__job-card .Prueba__location,
+.Prueba__job-card .Prueba__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.Prueba__job-card .Prueba__apply-btn {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.Prueba__job-card .Prueba__apply-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* Team Member */
+.Prueba__team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Prueba__team-member:last-child {
+    border-bottom: none;
+}
+
+.Prueba__team-member img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.Prueba__team-member .Prueba__info {
+    margin-left: 10px;
+}
+
+.Prueba__team-member .Prueba__info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Prueba__team-member .Prueba__info p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.Prueba__team-member .Prueba__time span {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Weather Card */
+.Prueba__weather-card {
+    text-align: center;
+}
+
+.Prueba__weather-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.Prueba__weather-card .Prueba__temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.Prueba__weather-card .Prueba__condition {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Profile Card */
+.Prueba__profile-card {
+    text-align: center;
+}
+
+.Prueba__profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.Prueba__profile-card h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.Prueba__profile-card p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.Prueba__profile-card .Prueba__bio {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.Prueba__profile-card .Prueba__bio p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.Prueba__profile-card .Prueba__contact-btn {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.Prueba__profile-card .Prueba__contact-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* Apply Button */
+.Prueba__apply-btn {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.Prueba__apply-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* Extra Button */
+.Prueba__extra-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+.Prueba__extra-btn:hover {
+    color: #000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .Prueba__container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .Prueba__card-x2,
+    .Prueba__card-x3 {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .Prueba__container {
+        grid-template-columns: 1fr;
+    }
+
+    .Prueba__card-x2,
+    .Prueba__card-x3 {
+        grid-column: span 1;
+    }
+}

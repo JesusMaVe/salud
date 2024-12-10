@@ -1,0 +1,26 @@
+.Survey__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    padding-bottom: 2rem;
+    border-bottom: 5px solid red;
+}
+
+.Survey__col {
+    width: 96%;
+    display: grid;
+    justify-self: center;
+    padding-top: 1.5rem;
+}
+
+.Survey__card {
+    width: 80%;
+    height: max-content;
+    display: grid;
+    place-self: center;
+    place-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(10, 10, 10, 0.4) 0 0 3px 0;
+}

@@ -1,0 +1,347 @@
+/* Estilos generales */
+
+.Prueba__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 99%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Prueba__card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.card-x2 {
+  grid-column: span 2;
+}
+
+.card-x3 {
+  grid-column: span 3;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.Prueba__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Prueba__subtitle {
+  font-size: 14px;
+  color: #888;
+}
+
+.extra-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+.extra-btn:hover {
+  color: #000;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+/* Task Item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item strong {
+  font-size: 16px;
+}
+
+.task-item p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.task-item p .fa-folder {
+  margin-right: 5px;
+}
+
+.Prueba__status {
+  display: flex;
+  align-items: center;
+}
+
+.time-badge {
+  background-color: #ff4d4f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.time-badge.Prueba__green {
+  background-color: #52c41a;
+}
+
+.status-icon {
+  font-size: 18px;
+}
+
+.status-icon.Prueba__green {
+  color: #52c41a;
+}
+
+/* Job Card */
+.job-card {
+  text-align: center;
+}
+
+.job-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.job-card .Prueba__description {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.job-card .description p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.job-card .Prueba__tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.job-card .tags span {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.job-card .location,
+.job-card .Prueba__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.job-card .apply-btn {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.job-card .apply-btn:hover {
+  background-color: #40a9ff;
+}
+
+/* Team Member */
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.team-member:last-child {
+  border-bottom: none;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.team-member .Prueba__info {
+  margin-left: 10px;
+}
+
+.team-member .info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.team-member .info p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.team-member .time span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Weather Card */
+.weather-card {
+  text-align: center;
+}
+
+.weather-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-card .Prueba__temperature {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-card .Prueba__condition {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Profile Card */
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-card h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.profile-card p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.profile-card .Prueba__bio {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.profile-card .bio p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.profile-card .contact-btn {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.profile-card .contact-btn:hover {
+  background-color: #40a9ff;
+}
+
+/* Apply Button */
+.apply-btn {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #40a9ff;
+}
+
+/* Extra Button */
+.extra-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+.extra-btn:hover {
+  color: #000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .Prueba__container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card-x2,
+  .card-x3 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .Prueba__container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-x2,
+  .card-x3 {
+    grid-column: span 1;
+  }
+}

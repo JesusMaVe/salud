@@ -1,0 +1,17 @@
+.Home__grid {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-top: 2rem;
+  padding-bottom: 180px;
+  gap: 2rem;
+}
+
+@media (max-width: 869px) {
+  .Home__grid {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+}

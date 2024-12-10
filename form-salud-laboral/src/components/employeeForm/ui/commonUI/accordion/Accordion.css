@@ -1,0 +1,17 @@
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.accordion-header {
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 1rem;
+    background: white;
+}

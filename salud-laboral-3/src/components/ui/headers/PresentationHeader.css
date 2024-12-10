@@ -1,0 +1,31 @@
+:root {
+	--main-bg-color: white;
+	--main-border-color: #aaa;
+	--main-shadow: rgba(10, 10, 10, 0.3) 0 0 2px 0;
+	--link-color: #4a4a4a;
+	--link-hover-bg: #7ab2d3;
+	--border-radius: 0.5rem;
+	--gap-size: 1.5rem;
+}
+
+.Presentation__navCtn {
+	width: 100%;
+	display: grid;
+	box-shadow: var(--main-shadow);
+	background-color: #fff;
+}
+
+.Presentation__navBody {
+	width: 60%;
+	justify-self: center;
+}
+
+.Presentation__imgCtn {
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.Presentation__imgCtn > img {
+	object-fit: contain;
+}

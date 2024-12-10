@@ -1,0 +1,29 @@
+.Enterprise__formStyle {
+  width: 100%;
+  display: grid;
+}
+
+.Enterprise__oneColumn {
+  width: 100%;
+  display: grid;
+  padding-left: 2rem;
+}
+
+.Enterprise__twoColumns {
+  width: 95%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Enterprise__labelStyle {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 869px) {
+  .Enterprise__oneColumn {
+    padding-left: 1rem;
+  }
+}

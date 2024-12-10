@@ -1,0 +1,29 @@
+.formStyle {
+  width: 100%;
+  display: grid;
+}
+
+.oneColumn {
+  width: 100%;
+  display: grid;
+  padding-left: 2rem;
+}
+
+.twoColumns {
+  width: 95%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.labelStyle {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 869px) {
+  .oneColumn {
+    padding-left: 1rem;
+  }
+}

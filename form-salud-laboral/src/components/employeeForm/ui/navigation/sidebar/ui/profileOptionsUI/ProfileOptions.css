@@ -1,0 +1,98 @@
+.ProfileOptions__user-profile {
+  background-color: #e6effc;
+  padding: 10px;
+  margin: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid #12121206;
+  transition: all 0.3s ease;
+  height: max-content;
+}
+
+.ProfileOptions__user-profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.ProfileOptions__user-avatar {
+  flex: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfileOptions__avatar-icon {
+  font-size: 2em;
+  color: #3a7bd5;
+}
+
+.ProfileOptions__user-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.ProfileOptions__username {
+  font-size: 1em;
+  color: #000000;
+}
+
+.ProfileOptions__user-role {
+  font-size: 0.9em;
+  color: #3b3b3b;
+}
+
+.ProfileOptions__user-menu-btn {
+  background: none;
+  border: none;
+  color: #3a7bd5;
+  cursor: pointer;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+}
+
+.ProfileOptions__user-menu-btn:hover {
+  color: #1f5ba6;
+}
+
+/* Menú de usuario */
+.ProfileOptions__user-menu {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.ProfileOptions__user-menu.open {
+  max-height: 500px;
+}
+
+.ProfileOptions__user-menu li a {
+  color: #414141;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 0.9em;
+}
+
+.ProfileOptions__user-menu li a:hover {
+  border-radius: 5px;
+  color: #3a7bd5;
+}
+
+.ProfileOptions__user-menu-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1em;
+}

@@ -1,0 +1,15 @@
+.Admin__globalContainer {
+    position: relative;
+	top: 64px;
+    left: 17%;
+    width: 83%;
+    padding-top: 2rem;
+}
+
+@media (max-width: 869px) {
+	.Admin__globalContainer {
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+	}
+}

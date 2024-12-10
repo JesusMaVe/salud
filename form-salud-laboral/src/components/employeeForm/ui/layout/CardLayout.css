@@ -1,0 +1,27 @@
+.CardLy__lyCtn {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.CardLy__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+@media (max-width: 869px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 869px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

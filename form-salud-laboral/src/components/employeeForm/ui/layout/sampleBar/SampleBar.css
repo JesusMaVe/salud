@@ -1,0 +1,31 @@
+.Sample__modalContainer {
+	position: fixed !important;
+	top: 52px;
+	width: 15%;
+	height: 100vh;
+	padding: 1rem 0 0 1rem;
+	background-color: #fff;
+	box-shadow: rgba(10, 10, 10, 0.3) 0 0 2px 0;
+	overflow: auto;
+}
+
+.Sample__mainLy {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 20% 80%;
+}
+
+.Sample__close {
+	justify-self: flex-end;
+	padding: 0.75rem 1.25rem 0.75rem 0;
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+@media (max-width: 869px) {
+	.Sample__modalContainer {
+		display: none;
+	}
+}

@@ -1,0 +1,88 @@
+services:
+  frontend1:
+    build:
+      context: ./salud-laboral-3/
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - my-app-network
+    environment:
+      - VITE_API_URL=http://backend:8080
+    container_name: frontend1
+
+  frontend2:
+    build:
+      context: ./form-salud-laboral/
+      dockerfile: Dockerfile
+    ports:
+      - "5174:80"
+    networks:
+      - my-app-network
+    environment:
+      - VITE_API_URL=http://backend2:8085
+    container_name: frontend2
+
+
+  backend:
+    build:
+      context: ./CRUD-SpringBoot-Backaend/demo/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle-db:1521:XE
+      - SPRING_DATASOURCE_USERNAME=emilio
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_JPA_DATABASE-PLATFORM=org.hibernate.dialect.OracleDialect
+      - SPRING_JPA_HIBERNATE_DDL-AUTO=update
+      - TZ=America/Mexico_City
+      - JAVA_OPTS=-Duser.timezone=America/Mexico_City
+      - ALLOWED_ORIGINS=http://frontend1:80,http://frontend2:80,http://localhost:5173
+    depends_on:
+      oracle-db:
+        condition: service_healthy
+    networks:
+      - my-app-network
+
+  backend2:
+    build:
+      context: ./node-middleware/
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    depends_on:
+      - oracle-db
+    networks:
+      - my-app-network
+    container_name: backend2
+
+  oracle-db:
+    image: gvenzl/oracle-xe:11
+    container_name: oracle-db
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=123
+      - ORACLE_DATABASE=XE
+      - APP_USER=emilio
+      - APP_USER_PASSWORD=1234
+      - TZ=America/Mexico_City
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - my-app-network
+    volumes:
+      - oracle-volume:/u01/app/oracle/oradata
+
+networks:
+  my-app-network:
+    driver: bridge
+
+volumes:
+  oracle-volume:

@@ -1,0 +1,47 @@
+.Sample__modalContainer {
+	position: fixed !important;
+	top: 52px;
+	width: 15%;
+	height: 100vh;
+	z-index: 2;
+	padding-top: 1.5rem;
+	background-color: #fff;
+	outline: 0;
+	outline-style: dotted;
+	pointer-events: auto;
+	box-shadow: rgba(10, 10, 10, 0.3) 0 0 2px 0;
+}
+
+.Sample__mainLy {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.SNavbar__header {
+	width: 100%;
+	height: max-content;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.SNavbar__body {
+	width: 100%;
+	display: grid;
+}
+
+.SNavbar__closeBtn {
+	color: #000;
+	justify-self: flex-end;
+	padding: 0.75rem 1.25rem 0.75rem 0;
+	font-weight: 600;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media (max-width: 869px) {
+	.Sample__modalContainer {
+		display: none;
+	}
+}

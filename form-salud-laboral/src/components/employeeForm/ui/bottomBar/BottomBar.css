@@ -1,0 +1,21 @@
+.BottomBar__navCtn {
+    position: fixed !important;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    display: grid;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1px;
+}
+
+.BottomBar__navBody {
+    width: 96%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-self: center;
+    place-items: center;
+    padding: 1.5rem 0;
+}

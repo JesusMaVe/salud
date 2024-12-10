@@ -1,0 +1,10 @@
+.Survey__card {
+    width: 90%;
+    height: 30%;
+    justify-self: center;
+    align-self: start;
+    padding: 1rem 0 2rem 1rem;
+    margin: 1rem;
+    border-radius: .375rem;
+    box-shadow: rgba(10, 10, 10, 0.3) 0 0 3px 0;
+}
